@@ -8,6 +8,9 @@
   "license": "MIT",
   "dependencies": {
     "angular-resource": "~1.2.25",
-    "angular": "~1.2.25"
+    "angular": "~1.2.25",
+    "angular-ui-router": "~0.2.11",
+    "dcl": "~1.1.1",
+    "requirejs": "~2.1.15"
   }
 }

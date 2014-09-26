@@ -8,11 +8,14 @@ var app = express();
 app.use(serve(path.join(__dirname,'../','client')));
 app.use(body.json());
 
-app.post("*", function(req, res) {
+app.get('*', function(req, res) {
   res.json({
-    success: true, 
-    data: req.body
+    success: true
   });
+});
+
+app.post("*", function(req, res) {
+  res.json(req.body);
 });
 
 app.listen(3000);

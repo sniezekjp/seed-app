@@ -5,9 +5,21 @@
   <title>Document</title>
 </head>
 <body ng-app="app">
-  <div ng-controller="MainCtrl"></div>
+  
+  <div ng-controller="MainCtrl">
+    <p>status: {{comp.isPlugged()}}</p>
+    <a href="" ng-click="comp.unplug()">unplug</a>
+    <a href="" ng-click="comp.plug()">plug</a>
+  </div>
+
+  <script src='vendor/dcl/mini.js'></script>
+  <script src='vendor/dcl/dcl.js'></script>
+
   <script src='vendor/angular/angular.js'></script>
   <script src='vendor/angular-resource/angular-resource.js'></script>
+  <script src='vendor/angular-ui-router/release/angular-ui-router.js'></script>
+  <script src='lib/base/cache.js'></script>
   <script src='js/app.js'></script>
+  <script src='js/dcl-practice.js'></script>
 </body>
 </html>
